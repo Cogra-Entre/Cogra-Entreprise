@@ -1,13 +1,11 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-// import Items from "../shop/Items";
 import {
   Navbar as CNavbar,
   NavbarBrand,
   NavbarContent,
   NavbarItem,
   Link,
-  Button,
   NavbarMenuToggle,
   NavbarMenu,
   NavbarMenuItem,
@@ -62,21 +60,22 @@ export default function Navbar() {
       </div>
       <CNavbar
         onMenuOpenChange={setIsMenuOpen}
-        className="flex flex-col mt-[6em] bg-white text-black"
+        className="flex flex-col mt-[7em] bg-white text-black"
       >
         <NavbarContent>
           <NavbarMenuToggle
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-            className="sm:hidden"
+            className="hidden mobile:block"
           />
           <NavbarBrand>
             <p className="font-bold text-inherit">Cogra Entreprise</p>
           </NavbarBrand>
         </NavbarContent>
 
-        <NavbarContent className="hidden sm:flex gap-4" justify="center">
+        <NavbarContent className="flex mobile:hidden sm:flex gap-4" justify="center">
           {navLinks &&
             navLinks.map((link, index) => {
+              console.log(link)
               return (
                 <NavbarItem isActive key={index}>
                   <Link href={link.href} aria-current={link.tag}>

@@ -3688,6 +3688,14 @@ html {
 }
 
 @media (max-width: 400px) {
+  .mobile\:block {
+    display: block;
+  }
+
+  .mobile\:hidden {
+    display: none;
+  }
+
   .mobile\:flex-col {
     flex-direction: column;
   }
