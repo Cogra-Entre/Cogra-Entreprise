@@ -822,16 +822,12 @@ video {
   margin-top: 0.5rem;
 }
 
-.mt-\[13em\] {
-  margin-top: 13em;
-}
-
 .mt-\[15em\] {
   margin-top: 15em;
 }
 
-.mt-\[200em\] {
-  margin-top: 200em;
+.mt-\[5em\] {
+  margin-top: 5em;
 }
 
 .mt-\[7em\] {
@@ -840,22 +836,6 @@ video {
 
 .mt-\[8em\] {
   margin-top: 8em;
-}
-
-.mt-\[20em\] {
-  margin-top: 20em;
-}
-
-.mt-\[2em\] {
-  margin-top: 2em;
-}
-
-.mt-\[12em\] {
-  margin-top: 12em;
-}
-
-.mt-\[5em\] {
-  margin-top: 5em;
 }
 
 .box-border {
@@ -1086,8 +1066,8 @@ video {
   width: 100vw;
 }
 
-.w-\[200px\] {
-  width: 200px;
+.w-\[600px\] {
+  width: 600px;
 }
 
 .w-\[80\%\] {
@@ -1108,14 +1088,6 @@ video {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-\[400px\] {
-  width: 400px;
-}
-
-.w-\[600px\] {
-  width: 600px;
 }
 
 .min-w-\[200px\] {
@@ -1465,20 +1437,20 @@ video {
   gap: 10px;
 }
 
+.gap-\[2em\] {
+  gap: 2em;
+}
+
 .gap-\[3em\] {
   gap: 3em;
 }
 
+.gap-\[4em\] {
+  gap: 4em;
+}
+
 .gap-\[5em\] {
   gap: 5em;
-}
-
-.gap-\[\] {
-  gap: ;
-}
-
-.gap-\[2em\] {
-  gap: 2em;
 }
 
 .space-x-0 > :not([hidden]) ~ :not([hidden]) {
@@ -1888,6 +1860,11 @@ video {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -1920,6 +1897,10 @@ video {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .text-\[black\] {
@@ -3712,20 +3693,12 @@ html {
 }
 
 @media (max-width: 400px) {
-  .mobile\:mt-\[\] {
-    margin-top: ;
-  }
-
   .mobile\:mt-\[1em\] {
     margin-top: 1em;
   }
 
   .mobile\:block {
     display: block;
-  }
-
-  .mobile\:flex {
-    display: flex;
   }
 
   .mobile\:hidden {
@@ -3744,13 +3717,14 @@ html {
     gap: 20px;
   }
 
-  .mobile\:gap-0 {
-    gap: 0px;
-  }
-
   .mobile\:px-\[15px\] {
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .mobile\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 

@@ -6,7 +6,7 @@ import "./../dist/output.css"
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Navbar from "./components/navbar/navbar.jsx";
-import About from "./pages/about us/About.jsx";
+import About from "./pages/about-us/About.jsx";
 
 const router = createBrowserRouter([
   {
