@@ -72,10 +72,13 @@ export default function Navbar() {
           </NavbarBrand>
         </NavbarContent>
 
-        <NavbarContent className="flex mobile:hidden sm:flex gap-4" justify="center">
+        <NavbarContent
+          className="flex mobile:hidden sm:flex gap-4"
+          justify="center"
+        >
           {navLinks &&
             navLinks.map((link, index) => {
-              console.log(link)
+              console.log(link);
               return (
                 <NavbarItem isActive key={index}>
                   <Link href={link.href} aria-current={link.tag}>
