@@ -6,7 +6,6 @@ import "./../dist/output.css"
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Navbar from "./components/navbar/navbar.jsx";
-import Footer from "./components/footer/footer.jsx";
 import About from "./pages/about us/About.jsx";
 
 const router = createBrowserRouter([
