@@ -22,9 +22,8 @@ import clock from "./../../assets/landing/clock.svg";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-  const menuItems = ["Home", "About Us", "Contact Us", "Products"];
   return (
-    <div className="flex flex-col fixed bg-[white] text-[black] w-[100vw] pb-[2em]">
+    <div className="flex flex-col fixed bg-[white] text-[black] w-[100vw] pb-[2em] gap-[3em] z-[999]">
       <div className="top-wrapper">
         <div>
           <div>
@@ -88,21 +87,21 @@ export default function Navbar() {
             })}
         </NavbarContent>
         <NavbarMenu className="flex flex-col mt-[5em] bg-[white] text-[black]">
-          {menuItems.map((item, index) => (
+          {navLinks.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
               <Link
                 color={
                   index === 2
                     ? "primary"
-                    : index === menuItems.length - 1
+                    : index === navLinks.length - 1
                     ? "danger"
                     : "foreground"
                 }
                 className="w-full"
-                href="#"
+                href={item.href}
                 size="lg"
               >
-                {item}
+                {item.tag}
               </Link>
             </NavbarMenuItem>
           ))}

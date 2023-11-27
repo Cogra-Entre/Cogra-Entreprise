@@ -1,0 +1,18 @@
+/* import landingFirstImage from {
+  ./assets/landing/landingFirst.jpeg;
+} */
+
+.top-home .sub-div{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    right: 5em;
+    bottom: 2em;
+    color: white;
+    border-radius: 10px;
+    padding: 30px 15px;
+    background-color: rgba(65, 65, 65, 0.70);
+}

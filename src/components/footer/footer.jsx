@@ -71,14 +71,14 @@ export default function Footer() {
               gap: "6px",
             }}
           >
-            {/* {navLinks &&
+            {navLinks &&
               navLinks.map((link, index) => {
                 return (
                   <NavLink to={link.href} key={index}>
                     {link.tag}
                   </NavLink>
                 );
-              })} */}
+              })}
           </div>
         </div>
 

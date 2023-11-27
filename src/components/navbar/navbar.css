@@ -60,7 +60,6 @@ button,
   padding: 2em 0;
   justify-content: space-evenly;
   gap: 33em;
-  margin-bottom: 100em;
 }
 .navContainer {
   z-index: 999;
