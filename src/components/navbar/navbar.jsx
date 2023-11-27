@@ -86,7 +86,7 @@ export default function Navbar() {
               );
             })}
         </NavbarContent>
-        <NavbarMenu className="flex flex-col mt-[5em] bg-[white] text-[black]">
+        <NavbarMenu className="flex flex-col mt-[8em] bg-[white] text-[black]">
           {navLinks.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
               <Link
