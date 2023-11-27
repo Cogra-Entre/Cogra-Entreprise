@@ -2,6 +2,7 @@ import React from "react";
 import Footer from "../../components/footer/footer";
 
 import Chicks from "./../../assets/about/chicks.png";
+import arrow from "./../../assets/about/arrow.png";
 
 export default function About() {
   return (
@@ -38,7 +39,45 @@ export default function About() {
         </div>
       </div>
 
-      <div></div>
+      <div className="flex justify-center items-center bg-[red] text-white py-[3em]">
+        <span className="mobile:text-sm mobile:px-3">
+          Choose Cogra Entreprise for a healthier start to your poultry farming
+          journey. Your family's well-being is our priority!
+        </span>
+      </div>
+
+      {/* Core values */}
+      <div className="flex flex-col my-[8em] items-baseline gap-4">
+        <span className="text-2xl">Core values</span>
+
+        <div className="flex flex-wrap gap-[3em] px-[1em] ml-[8em]">
+          <div className="flex gap-3">
+            <img src={arrow} alt={arrow} className="w-10 h-4" />
+            <span>
+              Growth: We strive to improve the lives not only of our team but{" "}
+              <br />
+              also our clients. We keep breaking boundaries and looking for{" "}
+              <br /> ways to improve.
+            </span>
+          </div>
+
+          <div className="flex gap-3">
+            <img src={arrow} alt={arrow} className="w-10 h-4" />
+            <span>
+              Customer focus: No matter the problem or the time, we are <br />{" "}
+              always committed to serving our clients
+            </span>
+          </div>
+
+          <div className="flex gap-3">
+            <img src={arrow} alt={arrow} className="w-10 h-4" />
+            <span>
+              Integrity: For us, integrity is absolute. You either have it or
+              you <br /> don't. We do
+            </span>
+          </div>
+        </div>
+      </div>
 
       <Footer />
     </div>
