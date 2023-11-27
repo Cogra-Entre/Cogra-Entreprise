@@ -9,7 +9,7 @@
 }
 a {
   text-decoration: none;
-  color: black;
+  color: black !important;
 }
 a:hover {
   color: #eba937;
@@ -18,8 +18,8 @@ a:hover {
 button,
 .tbn {
   position: relative;
-  background-color: #eba937;
-  border-radius: 13px;
+  /* background-color: #eba937;
+  border-radius: 13px; */
   outline: none;
   padding: 8px 25px;
   border: none;
@@ -27,10 +27,6 @@ button,
 }
 .loginbtn {
   padding: 6px 18px;
-}
-button:hover,
-.tbn:hover {
-  background-color: #b87501;
 }
 .tbn {
   display: flex;
@@ -64,6 +60,7 @@ button:hover,
   padding: 2em 0;
   justify-content: space-evenly;
   gap: 33em;
+  margin-bottom: 100em;
 }
 .navContainer {
   z-index: 999;
