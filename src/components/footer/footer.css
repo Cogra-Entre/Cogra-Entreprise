@@ -3,13 +3,15 @@
   color: white !important;
   padding: 4em 2em;
   margin-top: 2em;
+  position: relative;
+  bottom: 0;
+  width: 100vw;
 }
-a{
+a {
   color: white;
 }
 a:hover {
   text-decoration: underline;
-  /* color: red; */
 }
 input {
   border: none;
@@ -36,6 +38,7 @@ input::placeholder {
   align-items: baseline;
   gap: 3em;
   margin-top: 1em;
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 400px) {
