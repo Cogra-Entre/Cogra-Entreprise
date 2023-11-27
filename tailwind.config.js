@@ -5,6 +5,9 @@ export default {
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    screens: {
+      mobile: { max: "400px" },
+    },
     extend: {},
   },
   plugins: [],
