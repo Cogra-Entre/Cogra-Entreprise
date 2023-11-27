@@ -27,7 +27,7 @@ export default function App() {
         </div>
       </div>
 
-      <div className="flex justify-center items-center py-[5em] gap-[5em]">
+      <div className="flex justify-center items-center py-[5em] gap-[5em] mobile:flex-col mobile:px-[15px]">
         <div className="flex flex-col gap-[10px] text-xl">
           <h1 className="font-bold text-4xl">Cogra Entreprise</h1>
           <span>
