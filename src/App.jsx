@@ -5,8 +5,15 @@ import "./App.css";
 
 import LandingFirst from "./assets/landing/landingFirst.jpeg";
 import LandingChicks from "./assets/landing/landingChicks.png";
+import chick from "./assets/landing/chick.png";
 
 export default function App() {
+  const funFacts = [
+    "Baby Chicks Have Stronger Vision Than That of Humans",
+    "Baby chicks are the closest existing birds to dinosaur T. Rex",
+    "Baby Chicks Can Recognize Their Mother’s Voice",
+    "Baby Chicks Have an Egg Tooth",
+  ];
   return (
     <div className="mt-[15em]">
       <div className="top-home">
@@ -49,6 +56,21 @@ export default function App() {
           </span>
         </div>
         <img src={LandingChicks} alt={LandingChicks} />
+      </div>
+
+      {/* Fun fact */}
+      <div className="flex flex-col justify-center items-center gap-3  mobile:px-[15px]">
+        <h1 className="font-bold text-xl">Fun Facts</h1>
+
+        <div className="flex gap-[2em] mobile:flex-col-reverse mobile:gap-[20px]">
+          <img src={chick} alt={chick} className="w-[600px]" />
+
+          <div className="flex flex-col gap-1 mt-[5em] mobile:mt-[1em]">
+            {funFacts.map((fact) => (
+              <span key={fact}>{fact}</span>
+            ))}
+          </div>
+        </div>
       </div>
 
       <Footer />
