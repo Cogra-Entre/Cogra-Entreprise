@@ -2,17 +2,24 @@
   ./assets/landing/landingFirst.jpeg;
 } */
 
-.top-home .sub-div{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    right: 5em;
-    bottom: 2em;
-    color: white;
-    border-radius: 10px;
-    padding: 30px 15px;
-    background-color: rgba(65, 65, 65, 0.70);
+.top-home .sub-div {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  right: 5em;
+  bottom: 2em;
+  color: white;
+  border-radius: 10px;
+  padding: 30px 15px;
+  background-color: rgba(65, 65, 65, 0.7);
+}
+
+@media screen and (max-width: 400px) {
+  .top-home .sub-div {
+    bottom: -10em;
+    right: 4em;
+  }
 }
