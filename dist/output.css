@@ -803,6 +803,10 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.mb-9 {
+  margin-bottom: 2.25rem;
+}
+
 .mb-px {
   margin-bottom: 1px;
 }
@@ -845,18 +849,6 @@ video {
 
 .mt-\[8em\] {
   margin-top: 8em;
-}
-
-.mb-6 {
-  margin-bottom: 1.5rem;
-}
-
-.mb-10 {
-  margin-bottom: 2.5rem;
-}
-
-.mb-9 {
-  margin-bottom: 2.25rem;
 }
 
 .box-border {
@@ -1091,6 +1083,10 @@ video {
   width: 100vw;
 }
 
+.w-\[400px\] {
+  width: 400px;
+}
+
 .w-\[600px\] {
   width: 600px;
 }
@@ -1113,22 +1109,6 @@ video {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-\[\] {
-  width: ;
-}
-
-.w-\[200px\] {
-  width: 200px;
-}
-
-.w-\[500px\] {
-  width: 500px;
-}
-
-.w-\[400px\] {
-  width: 400px;
 }
 
 .min-w-\[200px\] {
@@ -1386,12 +1366,12 @@ video {
           appearance: none;
 }
 
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -1486,6 +1466,10 @@ video {
   gap: 10px;
 }
 
+.gap-\[2\.5em\] {
+  gap: 2.5em;
+}
+
 .gap-\[2em\] {
   gap: 2em;
 }
@@ -1500,18 +1484,6 @@ video {
 
 .gap-\[5em\] {
   gap: 5em;
-}
-
-.gap-6 {
-  gap: 1.5rem;
-}
-
-.gap-\[1em\] {
-  gap: 1em;
-}
-
-.gap-\[2\.5em\] {
-  gap: 2.5em;
 }
 
 .space-x-0 > :not([hidden]) ~ :not([hidden]) {
@@ -1844,9 +1816,9 @@ video {
   padding-bottom: 5em;
 }
 
-.py-\[\] {
-  padding-top: ;
-  padding-bottom: ;
+.px-\[\] {
+  padding-left: ;
+  padding-right: ;
 }
 
 .\!pb-0 {
@@ -3820,14 +3792,6 @@ html {
     gap: 20px;
   }
 
-  .mobile\:gap-1 {
-    gap: 0.25rem;
-  }
-
-  .mobile\:gap-5 {
-    gap: 1.25rem;
-  }
-
   .mobile\:px-3 {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
@@ -3838,14 +3802,14 @@ html {
     padding-right: 1rem;
   }
 
-  .mobile\:px-\[15px\] {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
   .mobile\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+
+  .mobile\:px-\[15px\] {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .mobile\:text-sm {

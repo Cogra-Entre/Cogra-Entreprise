@@ -78,7 +78,6 @@ export default function Navbar() {
         >
           {navLinks &&
             navLinks.map((link, index) => {
-              console.log(link);
               return (
                 <NavbarItem isActive key={index}>
                   <Link href={link.href} aria-current={link.tag}>
