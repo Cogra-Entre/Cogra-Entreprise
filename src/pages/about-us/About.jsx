@@ -47,12 +47,12 @@ export default function About() {
       </div>
 
       {/* Core values */}
-      <div className="flex flex-col my-[8em] items-baseline gap-4">
+      <div className="flex flex-col my-[8em] items-baseline gap-4 mobile:ml-[-7em] mobile:my-[3em]">
         <span className="text-2xl">Core values</span>
 
-        <div className="flex flex-wrap gap-[3em] px-[1em] ml-[8em]">
-          <div className="flex gap-3">
-            <img src={arrow} alt={arrow} className="w-10 h-4" />
+        <div className="flex flex-wrap gap-[3em] px-[1em] ml-[8em] mobile:gap-[1em]">
+          <div className="flex gap-3 ">
+            <img src={arrow} alt={arrow} className="w-10 h-5" />
             <span>
               Growth: We strive to improve the lives not only of our team but{" "}
               <br />
