@@ -3726,6 +3726,15 @@ html {
 }
 
 @media (max-width: 400px) {
+  .mobile\:my-\[3em\] {
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+
+  .mobile\:ml-\[-7em\] {
+    margin-left: -7em;
+  }
+
   .mobile\:mt-\[1em\] {
     margin-top: 1em;
   }
@@ -3746,8 +3755,20 @@ html {
     flex-direction: column-reverse;
   }
 
+  .mobile\:gap-\[1em\] {
+    gap: 1em;
+  }
+
   .mobile\:gap-\[20px\] {
     gap: 20px;
+  }
+
+  .mobile\:gap-1 {
+    gap: 0.25rem;
+  }
+
+  .mobile\:gap-5 {
+    gap: 1.25rem;
   }
 
   .mobile\:px-3 {
