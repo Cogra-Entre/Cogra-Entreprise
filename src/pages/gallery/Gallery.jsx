@@ -5,7 +5,7 @@ const ImageGallery = () => {
   // Import all images from the specified directory dynamically
   const importImages = () => {
     const images = import.meta.glob(
-      "/public/images/*.{png,jpg,jpeg,svg}"
+      "./../../assets/images/*.{png,jpg,jpeg,svg}"
     );
     return Object.entries(images).map(([path, image]) => ({ path, image }));
   };
@@ -17,7 +17,7 @@ const ImageGallery = () => {
       {images.map(({ path, image }, index) => {
         const absolutePath = path.replace(/\.\.\//g, "");
 
-        let img = `${absolutePath}`;
+        let img = `/src/${absolutePath}`;
 
         return (
           <>
