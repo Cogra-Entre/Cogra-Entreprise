@@ -28,7 +28,7 @@ export default function Navbar() {
             <img src={locate} alt={locate} />
             <span>
               {" "}
-              <strong> Nairobi, Kenya</strong>
+              <strong> Kirinyaga, Kenya</strong>
             </span>
           </div>
 
@@ -46,14 +46,14 @@ export default function Navbar() {
             <img src={call} alt={call} />
             <span>
               {" "}
-              <strong> +254 793 020496</strong>
+              <strong> +254 728 437459</strong>
             </span>
           </div>
 
           <div>
             <img src={mail} alt={mail} />
             <span>
-              <strong>icikakennedy@gmail.com</strong>{" "}
+              <strong>cograentreprise@gmail.com</strong>{" "}
             </span>
           </div>
         </div>
