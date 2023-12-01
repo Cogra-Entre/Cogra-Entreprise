@@ -1,4 +1,7 @@
 import React from "react";
+
+
+
 import Footer from "../../components/footer/footer";
 import { team_members } from "./../../helpers/team.helpers";
 
@@ -84,7 +87,11 @@ export default function About() {
           {team_members.map((member, index) => {
             return (
               <div key={index} className="flex flex-col">
-                <img src={member.image} alt={member.image} className="w-[400px]" />
+                <img
+                  src={member.image}
+                  alt={member.image}
+                  className="w-[400px]"
+                />
                 <span className="font-bold">{member.role}</span>
                 <span>{member.name}</span>
               </div>

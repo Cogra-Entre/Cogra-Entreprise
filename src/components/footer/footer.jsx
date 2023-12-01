@@ -17,7 +17,7 @@ export default function Footer() {
           }}
         >
           <span
-          className="subscribe"
+            className="subscribe"
             style={{
               fontSize: "35px",
               marginBottom: "13px",
@@ -64,17 +64,11 @@ export default function Footer() {
         <div>
           <h3>Usefull Links</h3>
 
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              gap: "6px",
-            }}
-          >
+          <div className="flex flex-col gap-[6px]">
             {navLinks &&
               navLinks.map((link, index) => {
                 return (
-                  <NavLink to={link.href} key={index}>
+                  <NavLink to={link.href} key={index} className="text-white">
                     {link.tag}
                   </NavLink>
                 );

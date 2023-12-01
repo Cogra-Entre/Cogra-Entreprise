@@ -7,6 +7,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Navbar from "./components/navbar/navbar.jsx";
 import About from "./pages/about-us/About.jsx";
+import Gallery from "./pages/gallery/Gallery.jsx";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
   {
     path: "/about",
     element: <About />,
+  },
+  {
+    path: "/gallery",
+    element: <Gallery />,
   },
 ]);
 
