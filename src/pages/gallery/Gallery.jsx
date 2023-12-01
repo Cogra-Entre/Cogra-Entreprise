@@ -19,21 +19,12 @@ const ImageGallery = () => {
         const absolutePath = path.replace(/^.*?public\//, "/");
 
         let img = `${absolutePath}`;
-        console.log(img)
+        console.log(img);
 
         return (
-          <div key={index}>
-            <h1>{img}</h1>
-            <ImageViewer>
-              <img
-                src={img}
-                alt={`image-${index}`}
-                className="cursor-pointer"
-              />
-            </ImageViewer>
-
-            {/* <img src={img} alt={`image-${index}`} className="cursor-pointer" /> */}
-          </div>
+          <ImageViewer>
+            <img src={img} alt={`image-${index}`} className="cursor-pointer" />
+          </ImageViewer>
         );
       })}
     </div>
