@@ -13,17 +13,11 @@ const ImageGallery = () => {
   return (
     <div className="grid grid-cols-3 gap-[1em] px-7 mobile:grid-cols-2 mobile:px-4 mobile:gap-[10px]">
       {images.map(({ path, image }, index) => {
-        let img;
-        const convertRelativePath = (path) => {
+        
           const absolutePath = path.replace(/\.\.\//g, "");
-          // Normalize slashes if needed
-
-          img = `/src/${absolutePath}`;
-        };
-
-        // Example usage:
-        convertRelativePath(path);
-
+         
+         let img = `/src/${absolutePath}`;
+    
         return (
           <img
             key={index}
