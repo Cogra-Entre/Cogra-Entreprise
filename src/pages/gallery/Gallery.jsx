@@ -28,7 +28,7 @@ const ImageGallery = () => {
           <img
             key={index}
             src={img}
-            alt={`image-${index}`}
+            alt={img}
             className="cursor-pointer"
 
           />
