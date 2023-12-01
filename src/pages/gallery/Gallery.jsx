@@ -20,17 +20,16 @@ const ImageGallery = () => {
         let img = `/src/${absolutePath}`;
 
         return (
-          <>
+          <div key={index}>
           <h1>{img}</h1>
             <ImageViewer>
               <img
-                key={index}
                 src={img}
                 alt={`image-${index}`}
                 className="cursor-pointer"
               />
             </ImageViewer>
-          </>
+          </div>
         );
       })}
     </div>
