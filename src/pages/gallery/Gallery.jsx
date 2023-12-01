@@ -15,9 +15,11 @@ const ImageGallery = () => {
   return (
     <div className="grid grid-cols-3 gap-[1em] px-7 mobile:grid-cols-2 mobile:px-4 mobile:gap-[10px]">
       {images.map(({ path, image }, index) => {
-        const absolutePath = path.replace(/\.\.\//g, "");
+        // const absolutePath = path.replace(/\.\.\//g, "");
+        const absolutePath = path.replace(/^.*?public\//, "/");
 
         let img = `${absolutePath}`;
+        console.log(img)
 
         return (
           <div key={index}>
