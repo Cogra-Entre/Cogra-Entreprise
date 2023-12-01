@@ -21,14 +21,16 @@ const ImageGallery = () => {
 
         return (
           <div key={index}>
-          <h1>{img}</h1>
-            <ImageViewer>
+            <h1>{img}</h1>
+            {/* <ImageViewer>
               <img
                 src={img}
                 alt={`image-${index}`}
                 className="cursor-pointer"
               />
-            </ImageViewer>
+            </ImageViewer> */}
+
+            <img src={img} alt={`image-${index}`} className="cursor-pointer" />
           </div>
         );
       })}
