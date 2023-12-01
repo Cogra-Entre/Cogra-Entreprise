@@ -1,4 +1,6 @@
 import React from "react";
+import { ImageViewer } from "react-image-viewer-dv";
+
 const ImageGallery = () => {
   // Import all images from the specified directory dynamically
   const importImages = () => {
@@ -13,21 +15,19 @@ const ImageGallery = () => {
   return (
     <div className="grid grid-cols-3 gap-[1em] px-7 mobile:grid-cols-2 mobile:px-4 mobile:gap-[10px]">
       {images.map(({ path, image }, index) => {
-        
-          const absolutePath = path.replace(/\.\.\//g, "");
-         
-         let img = `/src/${absolutePath}`;
-    
+        const absolutePath = path.replace(/\.\.\//g, "");
+
+        let img = `/src/${absolutePath}`;
+
         return (
-          // <img
-            // key={index}
-         //   src={img}
-           // alt={`image-${index}`}
-          //  className="cursor-pointer"
-
-       //   />
-
-<p>{img}<\p>
+          <ImageViewer>
+            <img
+              key={index}
+              src={img}
+              alt={`image-${index}`}
+              className="cursor-pointer"
+            />
+          </ImageViewer>
         );
       })}
     </div>
