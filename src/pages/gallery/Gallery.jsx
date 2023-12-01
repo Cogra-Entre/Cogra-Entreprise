@@ -20,12 +20,12 @@ const ImageGallery = () => {
     
         return (
           // <img
-            key={index}
-            src={img}
-            alt={`image-${index}`}
-            className="cursor-pointer"
+            // key={index}
+         //   src={img}
+           // alt={`image-${index}`}
+          //  className="cursor-pointer"
 
-          />
+       //   />
 
 <p>{img}<\p>
         );
