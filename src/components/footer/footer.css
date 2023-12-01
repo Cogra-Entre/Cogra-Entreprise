@@ -1,6 +1,6 @@
 .footer {
   background-color: red;
-  color: whitblacke !important;
+  color: black;
   padding: 4em 2em;
   margin-top: 2em;
   position: relative;
@@ -8,7 +8,7 @@
   width: 100vw;
 }
 a {
-  color: white !important;
+  color: white;
 }
 a:hover {
   text-decoration: underline;
