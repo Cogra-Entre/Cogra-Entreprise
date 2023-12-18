@@ -859,6 +859,14 @@ video {
   margin-top: 1rem;
 }
 
+.mb-\[2em\] {
+  margin-bottom: 2em;
+}
+
+.mb-\[3em\] {
+  margin-bottom: 3em;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -1121,6 +1129,18 @@ video {
 
 .w-\[\] {
   width: ;
+}
+
+.w-\[40\] {
+  width: 40;
+}
+
+.w-\[40vw\] {
+  width: 40vw;
+}
+
+.w-\[30vw\] {
+  width: 30vw;
 }
 
 .min-w-\[200px\] {
@@ -1715,6 +1735,15 @@ video {
   background-color: rgb(0 0 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[\] {
+  background-color: ;
+}
+
+.bg-\[\#D9D9D9\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(217 217 217 / var(--tw-bg-opacity));
+}
+
 .bg-\[length\:1\.25rem_1\.25rem\] {
   background-size: 1.25rem 1.25rem;
 }
@@ -1746,6 +1775,10 @@ video {
 
 .p-4 {
   padding: 1rem;
+}
+
+.p-\[3em\] {
+  padding: 3em;
 }
 
 .\!px-1 {
@@ -2002,6 +2035,18 @@ video {
   line-height: 1.75rem;
 }
 
+.text-\[30px\] {
+  font-size: 30px;
+}
+
+.text-\[40px\] {
+  font-size: 40px;
+}
+
+.text-\[24px\] {
+  font-size: 24px;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -2039,6 +2084,15 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[white\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\] {
+  color: ;
 }
 
 .underline {
@@ -2475,6 +2529,26 @@ html {
   * {
     overflow-x: hidden !important;
   }
+}
+
+.placeholder\:px-3::-moz-placeholder {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.placeholder\:px-3::placeholder {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.placeholder\:text-black::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-black::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .before\:absolute::before {
@@ -3839,6 +3913,26 @@ html {
     display: none;
   }
 
+  .mobile\:w-\[\] {
+    width: ;
+  }
+
+  .mobile\:w-\[10w\] {
+    width: 10w;
+  }
+
+  .mobile\:w-\[10vw\] {
+    width: 10vw;
+  }
+
+  .mobile\:w-\[100vw\] {
+    width: 100vw;
+  }
+
+  .mobile\:w-\[100\%\] {
+    width: 100%;
+  }
+
   .mobile\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -3883,9 +3977,41 @@ html {
     padding-right: 15px;
   }
 
+  .mobile\:px-\[20px\] {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .mobile\:px-\[1em\] {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .mobile\:px-\[1\.5em\] {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+
   .mobile\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .mobile\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .mobile\:text-\[20px\] {
+    font-size: 20px;
+  }
+
+  .mobile\:text-\[25px\] {
+    font-size: 25px;
+  }
+
+  .mobile\:text-\[\] {
+    color: ;
   }
 }
 
