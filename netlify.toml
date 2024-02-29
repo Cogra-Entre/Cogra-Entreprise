@@ -1,4 +1,3 @@
-‘ [[redirects]]
-from = "/*"
-to = "/index.html"
-status = 200
+[build]
+  command = "npm run build" # or your build command
+  publish = "dist" # or your build output directory
